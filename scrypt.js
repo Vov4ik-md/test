@@ -294,146 +294,272 @@
 
 //Exercitiu 1
 
-console.log('Exercitiu #1 - calculatorul scorului')
+//console.log('Exercitiu #1 - calculatorul scorului')
 
 
 //Varianta 1
 
-console.log('Varianta 1')
+// console.log('Varianta 1')
 
-let scoreDelfinii1 = 96
+// let scoreDelfinii1 = 96
 
-let scoreDelfinii2 = 108
+// let scoreDelfinii2 = 108
 
-let scoreDelfinii3 = 89
+// let scoreDelfinii3 = 89
 
-let scoreKoalas1 = 88
+// let scoreKoalas1 = 88
 
-let scoreKoalas2 = 91
+// let scoreKoalas2 = 91
 
-let scoreKoalas3 = 110
+// let scoreKoalas3 = 110
 
-let mediumScoreDelfini = (scoreDelfinii1 + scoreDelfinii2 + scoreDelfinii3) / 3
+// let mediumScoreDelfini = (scoreDelfinii1 + scoreDelfinii2 + scoreDelfinii3) / 3
 
-console.log(`Scorul mediu al echipei Delfinii este : ${mediumScoreDelfini} puncte`)
+// console.log(`Scorul mediu al echipei Delfinii este : ${mediumScoreDelfini} puncte`)
 
-let mediumScoreKoalas = (scoreKoalas1 + scoreKoalas2 + scoreKoalas3) / 3
+// let mediumScoreKoalas = (scoreKoalas1 + scoreKoalas2 + scoreKoalas3) / 3
 
-console.log(`Scorul mediu al echipei Koalas este : ${mediumScoreKoalas} puncte`)
+// console.log(`Scorul mediu al echipei Koalas este : ${mediumScoreKoalas} puncte`)
 
-if (mediumScoreDelfini > 100 || mediumScoreKoalas > 100) {
-	if (mediumScoreDelfini === mediumScoreKoalas) {
-		console.log('Remiza - ambele echipe au acumulat acelasi scor mediu!')
-	}
-	else if (mediumScoreDelfini > mediumScoreKoalas) {
-		console.log("Echipa Delfinii este castigatoare!")
-	} else {
-		console.log("Echipa Koalas este castigatoare!")
-	} 
-} else {
-	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
-}
+// if (mediumScoreDelfini > 100 || mediumScoreKoalas > 100) {
+// 	if (mediumScoreDelfini === mediumScoreKoalas) {
+// 		console.log('Remiza - ambele echipe au acumulat acelasi scor mediu!')
+// 	}
+// 	else if (mediumScoreDelfini > mediumScoreKoalas) {
+// 		console.log("Echipa Delfinii este castigatoare!")
+// 	} else {
+// 		console.log("Echipa Koalas este castigatoare!")
+// 	}
+// } else {
+// 	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
+// }
 
 //Varianta 2
 
-console.log('Varianta 2')
+// console.log('Varianta 2')
 
-scoreDelfinii1 = 97
+// scoreDelfinii1 = 97
 
-scoreDelfinii2 = 112
+// scoreDelfinii2 = 112
 
-scoreDelfinii3 = 101
+// scoreDelfinii3 = 101
 
-scoreKoalas1 = 109
+// scoreKoalas1 = 109
 
-scoreKoalas2 = 95
+// scoreKoalas2 = 95
 
-scoreKoalas3 = 123
+// scoreKoalas3 = 123
 
-mediumScoreDelfini = (scoreDelfinii1 + scoreDelfinii2 + scoreDelfinii3) / 3
+// mediumScoreDelfini = (scoreDelfinii1 + scoreDelfinii2 + scoreDelfinii3) / 3
 
-console.log(`Scorul mediu al echipei Delfinii este : ${mediumScoreDelfini} puncte`)
+// console.log(`Scorul mediu al echipei Delfinii este : ${mediumScoreDelfini} puncte`)
 
-mediumScoreKoalas = (scoreKoalas1 + scoreKoalas2 + scoreKoalas3) / 3
+// mediumScoreKoalas = (scoreKoalas1 + scoreKoalas2 + scoreKoalas3) / 3
 
-console.log(`Scorul mediu al echipei Koalas este : ${mediumScoreKoalas} puncte`)
+// console.log(`Scorul mediu al echipei Koalas este : ${mediumScoreKoalas} puncte`)
 
-if (mediumScoreDelfini > 100 || mediumScoreKoalas > 100) {
-	if (mediumScoreDelfini === mediumScoreKoalas) {
-		console.log('Remiza - ambele echipe au acumulat acelasi scor mediu!')
-	}
-	else if (mediumScoreDelfini > mediumScoreKoalas) {
-		console.log("Echipa Delfinii este castigatoare!")
-	} else {
-		console.log("Echipa Koalas este castigatoare!")
-	} 
-} else {
-	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
-}
+// if (mediumScoreDelfini > 100 || mediumScoreKoalas > 100) {
+// 	if (mediumScoreDelfini === mediumScoreKoalas) {
+// 		console.log('Remiza - ambele echipe au acumulat acelasi scor mediu!')
+// 	}
+// 	else if (mediumScoreDelfini > mediumScoreKoalas) {
+// 		console.log("Echipa Delfinii este castigatoare!")
+// 	} else {
+// 		console.log("Echipa Koalas este castigatoare!")
+// 	}
+// } else {
+// 	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
+// }
 
 //Varianta 3
 
-console.log('Varianta 3')
+// console.log('Varianta 3')
 
-scoreKoalas3 = 106
+// scoreKoalas3 = 106
 
-mediumScoreDelfini = (scoreDelfinii1 + scoreDelfinii2 + scoreDelfinii3) / 3
+// mediumScoreDelfini = (scoreDelfinii1 + scoreDelfinii2 + scoreDelfinii3) / 3
 
-console.log(`Scorul mediu al echipei Delfinii este : ${mediumScoreDelfini} puncte`)
+// console.log(`Scorul mediu al echipei Delfinii este : ${mediumScoreDelfini} puncte`)
 
-mediumScoreKoalas = (scoreKoalas1 + scoreKoalas2 + scoreKoalas3) / 3
+// mediumScoreKoalas = (scoreKoalas1 + scoreKoalas2 + scoreKoalas3) / 3
 
-console.log(`Scorul mediu al echipei Koalas este : ${mediumScoreKoalas} puncte`)
+// console.log(`Scorul mediu al echipei Koalas este : ${mediumScoreKoalas} puncte`)
 
-if (mediumScoreDelfini > 100 || mediumScoreKoalas > 100) {
-	if (mediumScoreDelfini === mediumScoreKoalas) {
-		console.log('Remiza - ambele echipe au acumulat acelasi scor mediu!')
-	}
-	else if (mediumScoreDelfini > mediumScoreKoalas) {
-		console.log("Echipa Delfinii este castigatoare!")
-	} else {
-		console.log("Echipa Koalas este castigatoare!")
-	} 
-} else {
-	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
-}
+// if (mediumScoreDelfini > 100 || mediumScoreKoalas > 100) {
+// 	if (mediumScoreDelfini === mediumScoreKoalas) {
+// 		console.log('Remiza - ambele echipe au acumulat acelasi scor mediu!')
+// 	}
+// 	else if (mediumScoreDelfini > mediumScoreKoalas) {
+// 		console.log("Echipa Delfinii este castigatoare!")
+// 	} else {
+// 		console.log("Echipa Koalas este castigatoare!")
+// 	}
+// } else {
+// 	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
+// }
 
 //Exercitiu 2
 
 //Varianta 1
 
-console.log('Exercitiu #2 - calculator de bacsis')
+// console.log('Exercitiu #2 - calculator de bacsis')
 
-console.log('Varianta 1')
+// console.log('Varianta 1')
 
-let cashReceipt = 275 
+// let cashReceipt = 275
 
-cashReceipt >= 50 || cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
+// cashReceipt >= 50 || cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
 
-let finalValue = cashReceipt + tips
+// let finalValue = cashReceipt + tips
 
-console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
+// console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
 
 //Varianta 2
 
-console.log('Varianta 2')
+// console.log('Varianta 2')
 
-cashReceipt = 40 
+// cashReceipt = 40
 
-cashReceipt >= 50 && cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
+// cashReceipt >= 50 && cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
 
-finalValue = cashReceipt + tips
+// finalValue = cashReceipt + tips
 
-console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
+// console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
 
 //Varianta 3
 
-console.log('Varianta 3')
+// console.log('Varianta 3')
 
-cashReceipt = 430
+// cashReceipt = 430
 
-cashReceipt >= 50 && cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
+// cashReceipt >= 50 && cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
 
-finalValue = cashReceipt + tips
+// finalValue = cashReceipt + tips
 
-console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
+// console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
+
+//Function
+
+function printName(name) {
+	console.log(name)
+}
+
+printName('Alexandra')
+printName('Elena')
+printName(true)
+printName(2569)
+
+function multiply(a, b) {
+	const total = a * b //local variabile
+	console.log(total) //print result
+	return multiplyResult = total
+}
+
+multiply(56, 75)
+console.log(multiplyResult)
+
+function calcVirsta(anulNasterii) {
+	console.log(2023 - anulNasterii) //print result
+	return age = 2023 - anulNasterii //returnam variabila age
+}
+
+calcVirsta(1989)
+
+console.log(age)
+
+
+function calcVirsta2(anulCurent, anulNasterii) {
+	console.log(anulCurent - anulNasterii) //print result
+	return age2 = anulCurent - anulNasterii //returnam variabila age
+}
+
+calcVirsta2(2023, 1989)
+
+console.log(age2)
+
+function juiceMaker(fruct1, fruct2, fruct3) {
+	const juice = `suc din ${fruct1}, ${fruct2} si ${fruct3}`
+	//return juice = `Suc din ${fruct1}, ${fruct2} si ${fruct3}`
+	console.log(juice)
+	
+}
+
+juiceMaker('morcov', 'portocale', 'cirese')
+
+function juiceMaker2(fruct1, fruct2, fruct3) {
+	const juice = `suc din ${fruct1} cirese, ${fruct2} portocale si ${fruct3} mere`
+	//return juice = `Suc din ${fruct1}, ${fruct2} si ${fruct3}`
+	console.log(juice)
+	
+}
+
+juiceMaker2(5, 3, 8)
+
+// function declaration and expresion
+
+// function declaration
+console.log(calcVirsta4(1980))
+
+
+function calcVirsta4(anulNasterii) {
+	return age = 2023 - anulNasterii //returnam variabila age
+}
+
+// expresion
+const calcVirsta3 = function (anulNasterii) { 
+	return age = 2023 - anulNasterii //returnam variabila age
+}
+
+console.log(calcVirsta3(1989))
+
+function calcTips(factura) {
+	bacsis = factura <= 300 && factura >= 50 ? factura * 0.15 : factura * 0.2
+	console.log(`Factura este de ${factura}, bacsisul este de ${bacsis} si total spre plata ${factura + bacsis}`)
+}
+
+calcTips(275)
+calcTips(40)
+calcTips(430)
+
+//other method
+
+function calcTips1(factura) {
+	bacsis = factura <= 300 && factura >= 50 ? factura * 0.15 : factura * 0.2
+	return `Factura este de ${factura}, bacsisul este de ${bacsis} si total spre plata ${factura + bacsis}`
+}
+
+console.log(calcTips1(420))
+console.log(calcTips1(150))
+console.log(calcTips1(45))
+
+// function simpleFunction() {
+// 	alert('e prea usoara aceasta functie')
+// }
+
+// simpleFunction()
+
+function simpleFunction() {
+	console.log('e prea usoara aceasta functie')
+}
+
+simpleFunction()
+
+//function in funtion
+
+function virstaPinaLaPensie(pensia, anulMeuDeNastere) {
+	const virstaActuala = calcVirsta4(anulMeuDeNastere)
+	return pensia - virstaActuala
+}
+
+console.log(`Pana la pensie au mai ramas ${virstaPinaLaPensie(64, 1975)} ani`)
+
+function maruntinFructe(fruct) {
+	return fruct * 4
+}
+
+function juiceMaker2(fruct1, fruct2, fruct3) {
+	const juice = `suc din ${maruntinFructe(fruct1)} de bucatele de cirese, ${maruntinFructe(fruct2)} de felii de portocale si ${maruntinFructe(fruct3)} de felii de mere`
+	console.log(juice)
+}
+
+juiceMaker2(5, 3, 8)
