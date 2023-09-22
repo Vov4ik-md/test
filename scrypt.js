@@ -563,3 +563,41 @@ function juiceMaker2(fruct1, fruct2, fruct3) {
 }
 
 juiceMaker2(5, 3, 8)
+
+console.log("Runda 1")
+
+function calcAverage(score1, score2, score3) {
+	return averageScore = (score1 + score2 + score3) / 3
+}
+
+let avgDolphins = calcAverage(44, 23, 71)
+
+console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
+
+let avgKoalas = calcAverage(65, 54, 49)
+
+console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
+
+function chekWinner(avgScore1, avgScore2) {
+	if (avgDolphins > avgKoalas * 2) {
+		console.log("Echipa Delfinii a castigat")
+	} else if (avgKoalas > avgDolphins * 2) {
+		console.log("Echipa Koalas a castigat")
+	} else {
+		console.log("Nu au fost indeplinite conditiile pentru a alege un castigator")
+	}
+}
+
+chekWinner(avgDolphins, avgKoalas)
+
+console.log("Runda 2")
+
+avgDolphins = calcAverage(85, 54, 41)
+
+console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
+
+avgKoalas = calcAverage(23, 34, 27)
+
+console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
+
+chekWinner(avgDolphins, avgKoalas)
