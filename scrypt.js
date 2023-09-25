@@ -689,17 +689,13 @@ function virstaDePensionare() {
 	let age = ageOfPerson()
 	let sex = isF()
 	if (age >= 18) {
-		console.log(`${name} are virsta de ${age}, i-au mai ramas ${sex} ani pana la pensionare`)
+		console.log(`${name} are virsta de ${age} de ani, i-au mai ramas ${sex} de ani pana la pensionare`)
 	} else {
-		console.log(`${name} are virsta de ${age}, inca nu a implinit majoratul`)
+		console.log(`${name} are virsta de ${age} de ani, inca nu a implinit majoratul`)
 	}
 }
 
-let sergiu = virstaDePensionare();
-console.log()
-let anasatasia = virstaDePensionare();
-console.log()
-let andreea = virstaDePensionare();
+let sergiu = virstaDePensionare()
 
 
 
