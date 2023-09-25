@@ -664,7 +664,14 @@
 // cost(1985)
 // cost(1957)
 // cost(2008)
-let numele = prompt("Introduceti numele dvs")
+/*let numele = prompt("Introduceti numele dvs")
+
+
+
+//Virsta de pensionare
+
+
+
 
 function nameOfPerson(name) {
 	return numele
@@ -695,7 +702,121 @@ function virstaDePensionare() {
 	}
 }
 
-let sergiu = virstaDePensionare()
+let sergiu = virstaDePensionare() */
 
+//Sergiu 1979
+//Anastasia 1963
+//Andreea 2010
+
+// const numelePersoanei = prompt('numele')
+// const anulNasterii = Number(prompt('Anul nasterii'))
+// const isF = Boolean(prompt('Introduceti 1 pentru femeie sau lasati gol (FALSE) pentru barbat'))
+
+// function virsta(a) {
+// 	return 2023 - a
+// }
+
+// function virstaPensionarii(b) {
+// 	/*if (b) {
+// 		console.log('persoana noastra este femeie si virsta de pensionare e de 64 de ani')
+// 	} else {
+// 		console.log('Persoana este barbat si virsta de pensionare e de 67 de ani')
+// 	}*/
+// 	return  b ? 64 : 67
+// }
+
+// function chekPension(e, c, d) {
+// 	let age = virsta(c)
+// 	let pensie = virstaPensionarii(d)
+// 	let aniPanaLaPensionare = pensie - age
+// 	console.log(`${age} ${pensie} ${aniPanaLaPensionare}`)
+	
+// 	if (age < 18) {
+// 		console.log(`${e} Persoana este minora`);
+// 	} else if (age >= pensie) {
+// 		console.log(`${e}Deja este pensionar`);
+// 	} else {
+// 		console.log(`${e} au ramas ${aniPanaLaPensionare}`)
+		
+// 	}
+// }
+
+// chekPension(numelePersoanei, anulNasterii, isF)
+//console.log(virstaPensionarii(isF))
+
+
+
+
+//  ARRAY - ARRAY - ARRAY - ARRAY - ARRAY
+
+
+
+
+const friend1 = 'Monica'
+const friend2 = 'Ross'
+const friend3 = 'Rachel'
+const friend4 = 'Phoebe'
+const friend5 = 'Chandler'
+const friend6 = 'Joey'
+
+
+//Array literal
+
+
+
+const friends = ['Monica', 'Ross', 'Rachel', 'Phoebe', 'Chandler', 'Joey']
+console.log(friends);
+
+const numbers = [1, 2, 3, 4, 5]
+console.log(numbers)
+
+const mixed = [1, 'Hello', [1, 2, 3], false]
+console.log(mixed)
+
+
+//Array constructor  -  const array = new Array()
+
+
+const numbers2 = new Array(1, 2, 3, 4, 5)
+console.log(numbers2)
+
+const mixed2 = new Array(1, 'Hello', [1, 2, 3], true, 2.5)
+console.log(mixed2)
+
+
+//Proprietatea lenght
+
+
+console.log(mixed2[2])
+console.log(friends[4])
+console.log(mixed.length)
+function deletaArray(a) {
+	a.length = 0
+}
+
+deletaArray(mixed)
+console.log(mixed)
+console.log(friends[friends.length -3])
+
+
+const bills = [125, 555, 44]
+
+function calcBacsis(a) {
+	return a < 300 && a >= 50 ? a * 0.15 : a * 0.2
+}
+
+const tips = [calcBacsis(bills[0]), calcBacsis(bills[1]), calcBacsis(bills[2])]
+
+console.log(tips)
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
+
+console.log(totals)
+
+console.log(friends.sort())
+console.log(friends.reverse())
+let deletedfriend = friends.pop()
+console.log(friends.push(deletedfriend))
+console.log(friends)
 
 
