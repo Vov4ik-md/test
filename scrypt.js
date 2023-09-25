@@ -676,20 +676,20 @@ function ageOfPerson(birthYear) {
 	return 2023 - anulDeNastere
 }
 
-let sexOfPerson = prompt("Introduceti gen")
+let genderOfPerson = prompt("Introduceti gen")
 
 function isF(maleFemale) {
 	let virsta = ageOfPerson()
-	sexOfPerson === "M" ? aniRamasi = 67 - virsta : aniRamasi = 64 - virsta
+	genderOfPerson === "M" ? aniRamasi = 67 - virsta : aniRamasi = 64 - virsta
 	return aniRamasi
 }
 
 function virstaDePensionare() {
 	let name = nameOfPerson()
 	let age = ageOfPerson()
-	let sex = isF()
+	let remainingYears = isF()
 	if (age >= 18) {
-		console.log(`${name} are virsta de ${age} de ani, i-au mai ramas ${sex} de ani pana la pensionare`)
+		console.log(`${name} are virsta de ${age} de ani, i-au mai ramas ${remainingYears} de ani pana la pensionare`)
 	} else {
 		console.log(`${name} are virsta de ${age} de ani, inca nu a implinit majoratul`)
 	}
