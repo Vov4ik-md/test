@@ -202,9 +202,9 @@
 
 // exercitiu - Equality operator
 
-//const favoriteNumber = Number(prompt('Care este numarul preferat?'))
+// const favoriteNumber = Number(prompt('Care este numarul preferat?'))
 
-// const favoriteNumber = 56
+// //const favoriteNumber = 56
 
 // console.log(favoriteNumber)
 
@@ -506,7 +506,7 @@
 // }
 
 // // expresion
-// const calcVirsta3 = function (anulNasterii) { 
+// const calcVirsta3 = function (anulNasterii) {
 // 	return age = 2023 - anulNasterii //returnam variabila age
 // }
 
@@ -564,103 +564,142 @@
 
 // juiceMaker2(5, 3, 8)
 
-console.log("Runda 1")
+// console.log("Runda 1")
 
-function calcAverage(score1, score2, score3) {
-	return (score1 + score2 + score3) / 3
+// function calcAverage(score1, score2, score3) {
+// 	return (score1 + score2 + score3) / 3
+// }
+
+// let avgDolphins = calcAverage(44, 23, 71)
+
+// console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
+
+// let avgKoalas = calcAverage(65, 54, 49)
+
+// console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
+
+// function chekWinner(avgDolphins, avgKoalas) {
+// 	if (avgDolphins > avgKoalas * 2) {
+// 		console.log("Echipa Delfinii a castigat")
+// 	} else if (avgKoalas > avgDolphins * 2) {
+// 		console.log("Echipa Koalas a castigat")
+// 	} else {
+// 		console.log("Nu au fost indeplinite conditiile pentru a alege un castigator")
+// 	}
+// }
+
+// chekWinner(avgDolphins, avgKoalas)
+
+// console.log("Runda 2")
+
+// avgDolphins = calcAverage(85, 54, 41)
+
+// console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
+
+// avgKoalas = calcAverage(23, 34, 27)
+
+// console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
+
+// chekWinner(avgDolphins, avgKoalas)
+
+
+// function helloWorld(language) {
+// 	if (language === "es") {
+// 		return "Hola Mundo!";
+// 	} else if (language === "de") {
+// 		return "Hallo Welt!";
+// 	} else if (language === "jp") {
+// 		return "こんにちは世界!";
+// 	} else {
+// 		return "Hello, World!";
+// 	}
+// }
+
+// console.log(helloWorld("es"));
+// console.log(helloWorld("de"));
+// console.log(helloWorld("jp"));
+// console.log(helloWorld());
+
+// function numbersAnimals(number, name) {
+// 	if (number === 1 || name === "sheep") {
+// 		return (`I have ${number} ${name}`)
+// 	} else if (number !== 1 && name === "goose") {
+// 		return (`I have ${number} geese`)
+// 	} else {
+// 		return (`I have ${number} ${name}s`)
+// 	}
+// }
+
+// console.log(numbersAnimals(6, "pig"));
+// console.log(numbersAnimals(0, "hamster"));
+// console.log(numbersAnimals(1, "parrot"));
+// console.log(numbersAnimals(5, "sheep"));
+// console.log(numbersAnimals(1, "goose"));
+// console.log(numbersAnimals(3, "goose"));
+
+// let pret
+
+// let anulDeNastere = prompt("introduceti anul de nastere")
+
+// function age(birthYear) {
+// 	console.log(2023 - anulDeNastere)
+// }
+
+// age()
+// function cost(anulDeNastere) {
+// 	let virsta = age(anulDeNastere)
+// 	if (virsta < 12) {
+// 		pret = 5
+// 	} else if (virsta >= 12 && virsta < 18) {
+// 		pret = 10
+// 	} else if (virsta >= 18 && virsta < 65) {
+// 		pret = 20
+// 	} else {
+// 		pret = 15
+// 	}
+// 	console.log(`Pretul biletului este de ${pret} lei iar virsta e de ${virsta} ani`);
+// }
+
+// cost(2015)
+// cost(1985)
+// cost(1957)
+// cost(2008)
+let numele = prompt("Introduceti numele dvs")
+
+function nameOfPerson(name) {
+	return numele
 }
 
-let avgDolphins = calcAverage(44, 23, 71)
+let anulDeNastere = prompt("Introduceti anul de nastere")
 
-console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
-
-let avgKoalas = calcAverage(65, 54, 49)
-
-console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
-
-function chekWinner(avgDolphins, avgKoalas) {
-	if (avgDolphins > avgKoalas * 2) {
-		console.log("Echipa Delfinii a castigat")
-	} else if (avgKoalas > avgDolphins * 2) {
-		console.log("Echipa Koalas a castigat")
-	} else {
-		console.log("Nu au fost indeplinite conditiile pentru a alege un castigator")
-	}
-}
-
-chekWinner(avgDolphins, avgKoalas)
-
-console.log("Runda 2")
-
-avgDolphins = calcAverage(85, 54, 41)
-
-console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
-
-avgKoalas = calcAverage(23, 34, 27)
-
-console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
-
-chekWinner(avgDolphins, avgKoalas)
-
-
-function helloWorld(language) {
-	if (language === "es") {
-		return "Hola Mundo!";
-	} else if (language === "de") {
-		return "Hallo Welt!";
-	} else if (language === "jp") {
-		return "こんにちは世界!";
-	} else {
-		return "Hello, World!";
-	}
-}
-
-console.log(helloWorld("es"));
-console.log(helloWorld("de"));
-console.log(helloWorld("jp"));
-console.log(helloWorld());
-
-function numbersAnimals(number, name) {
-	if (number === 1 || name === "sheep") {
-		return (`I have ${number} ${name}`)
-	} else if (number !== 1 && name === "goose") {
-		return (`I have ${number} geese`)
-	} else {
-		return (`I have ${number} ${name}s`)
-	}
-}
-
-console.log(numbersAnimals(6, "pig"));
-console.log(numbersAnimals(0, "hamster"));
-console.log(numbersAnimals(1, "parrot"));
-console.log(numbersAnimals(5, "sheep"));
-console.log(numbersAnimals(1, "goose"));
-console.log(numbersAnimals(3, "goose"));
-
-let pret
-
-function age(anulDeNastere) {
+function ageOfPerson(birthYear) {
 	return 2023 - anulDeNastere
 }
 
-function cost(anulDeNastere) {
-	let virsta = age(anulDeNastere)
-	if (virsta < 12) {
-		pret = 5
-	} else if (virsta >= 12 && virsta < 18) {
-		pret = 10
-	} else if (virsta >= 18 && virsta < 65) {
-		pret = 20
-	} else {
-		pret = 15
-	}
-	console.log(`Pretul biletului este de ${pret} lei iar virsta e de ${virsta} ani`);
+let sexOfPerson = prompt("Introduceti gen")
+
+function isF(maleFemale) {
+	let virsta = ageOfPerson()
+	sexOfPerson === "M" ? aniRamasi = 67 - virsta : aniRamasi = 64 - virsta
+	return aniRamasi
 }
 
-cost(2015)
-cost(1985)
-cost(1957)
-cost(2008)
+function virstaDePensionare() {
+	let name = nameOfPerson()
+	let age = ageOfPerson()
+	let sex = isF()
+	if (age >= 18) {
+		console.log(`${name} are virsta de ${age}, i-au mai ramas ${sex} ani pana la pensionare`)
+	} else {
+		console.log(`${name} are virsta de ${age}, inca nu a implinit majoratul`)
+	}
+}
+
+let sergiu = virstaDePensionare();
+console.log()
+let anasatasia = virstaDePensionare();
+console.log()
+let andreea = virstaDePensionare();
 
 
 
