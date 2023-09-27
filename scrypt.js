@@ -1,4 +1,6 @@
-// //Prima varianta
+//! prima lectie
+
+//?Prima varianta
 
 // let vadimsWeight = 78
 
@@ -22,7 +24,7 @@
 
 // console.log('BMI al lui Vadim este mai mare decat al lui Alex? ' + markHigherBMI)
 
-// // A doua varianta
+//?A doua varianta
 
 // let vadimsWeight1 = 95
 
@@ -47,7 +49,7 @@
 // console.log('BMI al lui Vadim este mai mare decat al lui Alex? ' + markHigherBMI1)
 
 
-// exercitiu 1
+//?exercitiu 1
 
 // let number1 = 35
 
@@ -67,7 +69,7 @@
 // 	console.log(`Variabila 2 - ${number2}, este mai mare`)
 // }
 
-//exercitiul 2
+//?exercitiul 2
 
 // console.log("Exercitiul 2:")
 
@@ -98,7 +100,7 @@
 // 	console.log(`Nici una din variabile nu este simbol`)
 // }
 
-//exercitiul 3
+//?exercitiul 3
 
 // console.log("Exercitiul 3")
 
@@ -135,7 +137,7 @@
 // 	console.log(`Numerele in ordine crescatoare : ${thirdNumber} , ${firstNumber} , ${secondNumber}`)
 // }
 
-//Ordine descrescatoare
+//?Ordine descrescatoare
 
 // console.log(`Ordine descrescatoare:`)
 
@@ -158,7 +160,7 @@
 // 	console.log(`Numerele in ordine descrescatoare : ${thirdNumber} , ${firstNumber} , ${secondNumber}`)
 // }
 
-// Exercitiul 4
+//?Exercitiul 4
 
 // console.log("Exercitiul 4")
 
@@ -200,7 +202,7 @@
 // 	console.log(`Cel mai mare numar este ${fifthNum}`)
 // }
 
-// exercitiu - Equality operator
+//? exercitiu - Equality operator
 
 // const favoriteNumber = Number(prompt('Care este numarul preferat?'))
 
@@ -223,7 +225,7 @@
 // }
 
 
-// logical operators
+//! logical operators
 
 // const hasDriverLicense = true
 
@@ -231,7 +233,7 @@
 
 // const isTired = true
 
-//AND operator (&&)
+//* AND operator (&&)
 
 // if (hasDriverLicense && hasGoodVision && !isTired) {
 // 	console.log('Ana can drive')
@@ -239,7 +241,7 @@
 // 	console.log('Ana can not drive')
 // }
 
-// OR operator (||)
+//* OR operator (||)
 
 // if (!hasDriverLicense || !hasGoodVision || isTired) {
 // 	console.log('Ana can not drive')
@@ -248,7 +250,7 @@
 // }
 
 
-// switch statement
+//! switch statement
 
 // const myDay = "thuesday"
 
@@ -274,7 +276,7 @@
 // 		console.log('nu exista asa zi')
 // }
 
-//The conditional (Ternary) Operator
+//! The conditional (Ternary) Operator
 
 // variabile = expression1 ? expression2 : expression3
 
@@ -292,12 +294,12 @@
 
 // console.log(`You can ${yourAge >= 18 ? 'drink wine' : 'drink water'}`);
 
-//Exercitiu 1
+//? Exercitiu 1
 
 //console.log('Exercitiu #1 - calculatorul scorului')
 
 
-//Varianta 1
+//* Varianta 1
 
 // console.log('Varianta 1')
 
@@ -334,7 +336,7 @@
 // 	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
 // }
 
-//Varianta 2
+//* Varianta 2
 
 // console.log('Varianta 2')
 
@@ -371,7 +373,7 @@
 // 	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
 // }
 
-//Varianta 3
+//* Varianta 3
 
 // console.log('Varianta 3')
 
@@ -398,9 +400,9 @@
 // 	console.log('Nici o echipa nu a atins scorul mediu de 100 de puncte')
 // }
 
-//Exercitiu 2
+//? Exercitiu 2
 
-//Varianta 1
+//* Varianta 1
 
 // console.log('Exercitiu #2 - calculator de bacsis')
 
@@ -414,7 +416,7 @@
 
 // console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
 
-//Varianta 2
+//* Varianta 2
 
 // console.log('Varianta 2')
 
@@ -426,7 +428,7 @@
 
 // console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
 
-//Varianta 3
+//* Varianta 3
 
 // console.log('Varianta 3')
 
@@ -438,7 +440,7 @@
 
 // console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
 
-//Function
+//! Function
 
 // function printName(name) {
 // 	console.log(name)
@@ -668,7 +670,7 @@
 
 
 
-//Virsta de pensionare
+//! Virsta de pensionare
 
 
 
@@ -747,47 +749,47 @@ let sergiu = virstaDePensionare() */
 
 
 
-//  ARRAY - ARRAY - ARRAY - ARRAY - ARRAY
+//! ARRAY - ARRAY - ARRAY - ARRAY - ARRAY
 
 
 
 
-const friend1 = 'Monica'
+/*const friend1 = 'Monica'
 const friend2 = 'Ross'
 const friend3 = 'Rachel'
 const friend4 = 'Phoebe'
 const friend5 = 'Chandler'
-const friend6 = 'Joey'
+const friend6 = 'Joey'*/
 
 
-//Array literal
+//? Array literal
 
 
 
-const friends = ['Monica', 'Ross', 'Rachel', 'Phoebe', 'Chandler', 'Joey']
+/*const friends = ['Monica', 'Ross', 'Rachel', 'Phoebe', 'Chandler', 'Joey']
 console.log(friends);
 
 const numbers = [1, 2, 3, 4, 5]
 console.log(numbers)
 
 const mixed = [1, 'Hello', [1, 2, 3], false]
-console.log(mixed)
+console.log(mixed)*/
 
 
-//Array constructor  -  const array = new Array()
+//? Array constructor  -  const array = new Array()
 
 
-const numbers2 = new Array(1, 2, 3, 4, 5)
+/*const numbers2 = new Array(1, 2, 3, 4, 5)
 console.log(numbers2)
 
 const mixed2 = new Array(1, 'Hello', [1, 2, 3], true, 2.5)
-console.log(mixed2)
+console.log(mixed2)*/
 
 
-//Proprietatea lenght
+//? Proprietatea lenght
 
 
-console.log(mixed2[2])
+/*console.log(mixed2[2])
 console.log(friends[4])
 console.log(mixed.length)
 function deletaArray(a) {
@@ -796,12 +798,12 @@ function deletaArray(a) {
 
 deletaArray(mixed)
 console.log(mixed)
-console.log(friends[friends.length -3])
+console.log(friends[friends.length -3])*/
 
 
-const bills = [125, 555, 44]
+//!const bills = [125, 555, 44]
 
-function calcBacsis(a) {
+/*function calcBacsis(a) {
 	return a < 300 && a >= 50 ? a * 0.15 : a * 0.2
 }
 
@@ -817,6 +819,52 @@ console.log(friends.sort())
 console.log(friends.reverse())
 let deletedfriend = friends.pop()
 console.log(friends.push(deletedfriend))
-console.log(friends)
+console.log(friends)*/
+
+console.log(`Exercitiu 1 - array si array reverse`)
+
+const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+console.log('array')
+console.log(letters)
+console.log('array reverse')
+console.log(letters.reverse())
+
+console.log('Exercitiul 2 - rotirea array cu 1 pozitie la stinga')
+
+letters.shift()
+letters.push('h')
+console.log(letters)
+
+console.log('Exercitiu 3 - creem si chemam functia de imbinare a 2 array-uri in unul nou')
+
+const numbers = [999, 888, 777, 666, 555, 444, 333, 222, 111]
+console.log(numbers)
+
+function newArray() {
+	const lettersAndNumbers = numbers.concat(letters)
+	return lettersAndNumbers
+}
+console.log(newArray())
+
+console.log('Exercitiul 4 - creem functia care intoarce doar valorile pozitive din array')
+
+const numbers2 = [-1, 5, 22 - 75, 18, 69, -68, -56, 99, 10, -10]
+console.log(`Creem array-ul :`)
+console.log(numbers2)
+
+function positiveValues() {
+	const result = numbers2.filter(item => item > 0)
+	return result
+}
+function negativeValues() {
+	const result = numbers2.filter(item => item < 0)
+	return result
+}
+console.log(`Array cu valorile pozitive:`)
+console.log(positiveValues())
+console.log(`Array cu valorile negaive:`)
+console.log(negativeValues())
+
+
 
 
