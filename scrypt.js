@@ -821,21 +821,27 @@ let deletedfriend = friends.pop()
 console.log(friends.push(deletedfriend))
 console.log(friends)*/
 
-console.log(`Exercitiu 1 - array si array reverse`)
+//? exercitiul 1
+
+/*console.log(`Exercitiu 1 - array si array reverse`)
 
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 console.log('array')
 console.log(letters)
 console.log('array reverse')
-console.log(letters.reverse())
+console.log(letters.reverse())*/
 
-console.log('Exercitiul 2 - rotirea array cu 1 pozitie la stinga')
+//? exercitiul 2
+
+/*console.log('Exercitiul 2 - rotirea array cu 1 pozitie la stinga')
 
 letters.shift()
 letters.push('h')
-console.log(letters)
+console.log(letters)*/
 
-console.log('Exercitiu 3 - creem si chemam functia de imbinare a 2 array-uri in unul nou')
+//? exercitiul 3
+
+/*console.log('Exercitiu 3 - creem si chemam functia de imbinare a 2 array-uri in unul nou')
 
 const numbers = [999, 888, 777, 666, 555, 444, 333, 222, 111]
 console.log(numbers)
@@ -844,9 +850,11 @@ function newArray() {
 	const lettersAndNumbers = numbers.concat(letters)
 	return lettersAndNumbers
 }
-console.log(newArray())
+console.log(newArray()) */
 
-console.log('Exercitiul 4 - creem functia care intoarce doar valorile pozitive din array')
+//?exercitiul 4
+
+/*console.log('Exercitiul 4 - creem functia care intoarce doar valorile pozitive din array')
 
 const numbers2 = [-1, 5, 22 - 75, 18, 69, -68, -56, 99, 10, -10]
 console.log(`Creem array-ul :`)
@@ -863,8 +871,49 @@ function negativeValues() {
 console.log(`Array cu valorile pozitive:`)
 console.log(positiveValues())
 console.log(`Array cu valorile negaive:`)
-console.log(negativeValues())
+console.log(negativeValues()) */
+
+//? exercitiul 5
+
+const listaCumparaturi = ['oua', 'piine', 'mere', 'banane', 'cartofi', 'unt', 'inghetata', 'smintina', 'maioneza']
+console.log('Lista de cumparaturi:')
+console.log(listaCumparaturi)
+function sorteazaAlfabetic() {
+	console.log(listaCumparaturi.sort())
+}
+console.log("Lista de cumparaturi in ordine alfabetica:");
+sorteazaAlfabetic()
+
+//! elimina produs
+
+function eliminaProdus(produs) {
+	produs = listaCumparaturi.indexOf(produs)
+	listaCumparaturi.splice(produs, 1)
+	console.log(listaCumparaturi)
+}
+console.log(`Lista de cumparaturi dupa chemarea functiei eliminaProdus`)
+eliminaProdus('cartofi')
+
+//! gaseste produs
 
 
+const produsul = 'harbuz'
+function gasesteProdusul(produsulCautat) {
+	return produsulCautat === produsul
+}
+function produsGasit() {
+	const produsulCautat = listaCumparaturi.findIndex(gasesteProdusul)
+	produsulCautat != -1 ? console.log(produsulCautat) : console.log(`${produsul} nu este in lista de cumparaturi`);
+	return produsulCautat
+}
+produsGasit(produsul)
+
+//! adaugaProdus
 
 
+function adaugaProdus(produsulAdaugat) {
+	listaCumparaturi.includes(produsulAdaugat) ? console.log('Acest produs este deja in lista de cumparaturi') :
+	listaCumparaturi.push(produsulAdaugat)
+	console.log(listaCumparaturi)
+}
+adaugaProdus('harbuz')
