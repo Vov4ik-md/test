@@ -875,7 +875,7 @@ console.log(negativeValues()) */
 
 //? exercitiul 5
 
-let listaCumparaturi = ['oua', 'piine', 'mere', 'banane', 'cartofi', 'unt', 'inghetata', 'smintina', 'maioneza']
+/*let listaCumparaturi = ['oua', 'piine', 'mere', 'banane', 'cartofi', 'unt', 'inghetata', 'smintina', 'maioneza']
 console.log('Lista de cumparaturi:')
 console.log(listaCumparaturi)
 
@@ -916,3 +916,84 @@ function adaugaProdus(produsulAdaugat) {
 	console.log(listaCumparaturi1)
 }
 adaugaProdus('harbuz')
+
+console.log(`Bonus`)
+
+
+function bonus(produs) {
+	const pozitia = listaCumparaturi.indexOf(produs)
+	if (pozitia >= 0) {
+		console.log(`${produs} este deja in lista, il stergem`)
+		listaCumparaturi.splice(pozitia, 1)
+		console.log(listaCumparaturi)
+	} else {
+		console.log(`${produs} nu exista in lista, il adaugam`)
+		listaCumparaturi.push(produs)
+		console.log(listaCumparaturi)
+	}
+}
+console.log(listaCumparaturi)
+
+bonus('banane')	
+bonus('lapte')
+bonus('ceapa')
+bonus('ulei')
+bonus('unt')*/
+
+
+//! FOR LOOP   -   29.09.2023
+
+const myArray = [15, 56, -12, 56, 1, true, 'eu', 58, 69]
+console.log(myArray)
+for (let i = 0; i < myArray.length; i++) {
+	console.log('elementul ' + myArray[i] + ' are pozitia ' + i)
+}
+
+for (i = 1; i <= 10; i++){
+	console.log(i)
+}
+
+//afisati numere impare pana la 100
+
+for (i = 1; i < 100; i = i + 2){
+	console.log(i)
+}
+
+//afisati tablita inmultirii la 7
+
+console.log('tabla inmultirii la 7')
+
+for (i = 1; i <= 10; i = i + 1){
+	console.log(i*7)
+}
+
+//Suma numerelor de la 1 la 10
+console.log('Suma numerelor de la 1 la 10')
+
+
+
+let total = 0
+
+for (i = 1; i <= 10; i++){
+	total = total + i
+	console.log(total)
+}
+console.log(`suma cifrelor de la 1 la 10 este egala ${total}`)
+
+let total1 = 0
+for (i = 10; i <= 30; i = i + 2){
+	total1 = total1 + i
+	console.log(total1)
+}
+
+//calculati si afisati media numerelor din array
+
+let sumArray = 0
+const newArray = [25, 56, 21, 47, 256, 145, -12, -489, 56, -8, 1453]
+for (i = 0; i < newArray.length; i++) {
+	sumArray = sumArray + newArray[i]
+	console.log('suma cifrelor din array este ' + sumArray)
+}
+
+console.log(sumArray/newArray.length, 'este media')
+
