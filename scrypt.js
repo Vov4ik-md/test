@@ -875,11 +875,13 @@ console.log(negativeValues()) */
 
 //? exercitiul 5
 
-const listaCumparaturi = ['oua', 'piine', 'mere', 'banane', 'cartofi', 'unt', 'inghetata', 'smintina', 'maioneza']
+let listaCumparaturi = ['oua', 'piine', 'mere', 'banane', 'cartofi', 'unt', 'inghetata', 'smintina', 'maioneza']
 console.log('Lista de cumparaturi:')
 console.log(listaCumparaturi)
+
 function sorteazaAlfabetic() {
-	console.log(listaCumparaturi.sort())
+	let listaCumparaturi1 = [...listaCumparaturi]
+	console.log(listaCumparaturi1.sort())
 }
 console.log("Lista de cumparaturi in ordine alfabetica:");
 sorteazaAlfabetic()
@@ -887,9 +889,10 @@ sorteazaAlfabetic()
 //! elimina produs
 
 function eliminaProdus(produs) {
-	produs = listaCumparaturi.indexOf(produs)
-	listaCumparaturi.splice(produs, 1)
-	console.log(listaCumparaturi)
+	let listaCumparaturi1 = [...listaCumparaturi]
+	produs = listaCumparaturi1.indexOf(produs)
+	listaCumparaturi1.splice(produs, 1)
+	console.log(listaCumparaturi1)
 }
 console.log(`Lista de cumparaturi dupa chemarea functiei eliminaProdus`)
 eliminaProdus('cartofi')
@@ -897,23 +900,19 @@ eliminaProdus('cartofi')
 //! gaseste produs
 
 
-const produsul = 'harbuz'
-function gasesteProdusul(produsulCautat) {
-	return produsulCautat === produsul
+function cautaProdus(produs) {
+	let listaCumparaturi1 = [...listaCumparaturi]
+	index = listaCumparaturi1.indexOf(produs)
+	listaCumparaturi1.indexOf(produs) != -1 ? console.log(`produsul cautat este ${produs}`) : console.log(`${produs} nu este in lista`)
 }
-function produsGasit() {
-	const produsulCautat = listaCumparaturi.findIndex(gasesteProdusul)
-	produsulCautat != -1 ? console.log(produsulCautat) : console.log(`${produsul} nu este in lista de cumparaturi`);
-	return produsulCautat
-}
-produsGasit(produsul)
+cautaProdus('pere')
 
 //! adaugaProdus
 
-
 function adaugaProdus(produsulAdaugat) {
-	listaCumparaturi.includes(produsulAdaugat) ? console.log('Acest produs este deja in lista de cumparaturi') :
-	listaCumparaturi.push(produsulAdaugat)
-	console.log(listaCumparaturi)
+	let listaCumparaturi1 = [...listaCumparaturi]
+	listaCumparaturi1.includes(produsulAdaugat) ? console.log('Acest produs este deja in lista de cumparaturi') :
+	listaCumparaturi1.push(produsulAdaugat)
+	console.log(listaCumparaturi1)
 }
 adaugaProdus('harbuz')
