@@ -943,7 +943,7 @@ bonus('unt')*/
 
 //! FOR LOOP   -   29.09.2023
 
-const myArray = [15, 56, -12, 56, 1, true, 'eu', 58, 69]
+/*const myArray = [15, 56, -12, 56, 1, true, 'eu', 58, 69]
 console.log(myArray)
 for (let i = 0; i < myArray.length; i++) {
 	console.log('elementul ' + myArray[i] + ' are pozitia ' + i)
@@ -951,24 +951,24 @@ for (let i = 0; i < myArray.length; i++) {
 
 for (i = 1; i <= 10; i++){
 	console.log(i)
-}
+}*/
 
 //afisati numere impare pana la 100
 
-for (i = 1; i < 100; i = i + 2){
+/*for (i = 1; i < 100; i = i + 2){
 	console.log(i)
-}
+}*/
 
 //afisati tablita inmultirii la 7
 
-console.log('tabla inmultirii la 7')
+/*console.log('tabla inmultirii la 7')
 
 for (i = 1; i <= 10; i = i + 1){
 	console.log(i*7)
-}
+}*/
 
 //Suma numerelor de la 1 la 10
-console.log('Suma numerelor de la 1 la 10')
+/*console.log('Suma numerelor de la 1 la 10')
 
 const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -1002,7 +1002,11 @@ for (i = 10; i <= 30; i = i + 2){
 
 //calculati si afisati media numerelor din array
 
+<<<<<<< HEAD
 
+=======
+/*let sumArray = 0
+>>>>>>> 70e82ba7b9f0691232e091c6c9521ccb86cec7c7
 const newArray = [25, 56, 21, 47, 256, 145, -12, -489, 56, -8, 1453]
 
 const newAverage = newArray.reduce((a, b) => {
@@ -1016,4 +1020,95 @@ for (i = 0; i < newArray.length; i++) {
 	sumArray = sumArray + newArray[i]
 	console.log('suma cifrelor din array este ' + sumArray)
 }
+<<<<<<< HEAD
 console.log(sumArray/newArray.length, 'este media')
+=======
+
+console.log(sumArray/newArray.length, 'este media')*/
+
+
+
+//!  WHILE LOOP
+
+
+//? EX1 Afisam numerele pare pana la 100
+
+/*console.log("Afisam numerele de la 0 la 100 prin while loop")
+
+let i = 0
+while (i < 100) {
+	console.log(i)
+	i+=2
+}*/
+
+//? EX2 Afisam un sir Fibonnaci pentru numerele pana la 1000
+
+
+/*console.log('sir Fibonnaci');
+
+let a = 0
+let b = 1
+
+/*while (c < 1000) {
+	console.log(c)
+	a = b
+	b = c
+	c = a + b
+}*/
+
+//? EX3  Verificarea paritatii
+
+/*let a
+while (a !== 'stop') {
+	a = prompt('Introduceti numar intreg sau scriti cuvintul STOP')
+	if (a % 2 === 0) {
+		console.log(`${a} este numar par`)
+	} else if (a === 'stop') {
+		console.log('A fost introdusa comanda stop')
+	} else {
+		console.log(`${a} este numar impar`)
+	}
+}*/
+
+
+//! Objects
+
+let myCar = [2016, 'Ford', 2, 'gri', 'automat']
+
+let myNewCar = {
+	anul: 2016,
+	marca: 'Ford',
+	capacitatea: 2,
+	culoarea: 'gri',
+	cutie: 'automat',
+	accidente: [2018, 2020, 2021, 2023],
+	proprietari: {
+		numele: 'Vasile',
+		anulNasterii: 1980,
+		proprietar: 2019 - 2016
+	}
+}
+
+
+console.log(myNewCar)
+
+//console.log(`Culoarea masinii in array este ` + myCar[3])
+//console.log(`Culoarea masinii in obiect este ` + myNewCar.culoarea)
+if (myNewCar.culoarea === "gri") {
+	console.log('culoare nemodificata')
+}
+
+myNewCar.culoarea = 'alba'
+console.log(`Culoarea masinii in obiect este ` + myNewCar.culoarea)
+
+myNewCar.accidente = 0
+console.log(myNewCar.accidente)
+delete myNewCar.accidente
+console.log(myNewCar.accidente)
+myNewCar.proprietari.anulNasterii = 2010
+console.log(myNewCar)
+
+
+
+
+>>>>>>> 70e82ba7b9f0691232e091c6c9521ccb86cec7c7
