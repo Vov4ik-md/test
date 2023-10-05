@@ -1068,7 +1068,7 @@ while (a !== 'stop') {
 
 //! Objects
 
-let myCar = [2016, 'Ford', 2, 'gri', 'automat']
+/*let myCar = [2016, 'Ford', 2, 'gri', 'automat']
 
 let myNewCar = {
 	anul: 2016,
@@ -1102,9 +1102,91 @@ delete myNewCar.accidente
 console.log(myNewCar.accidente)
 myNewCar.proprietari.anulNasterii = 2010
 console.log(myNewCar)
+*/
+
+//! ex1 cautarea unui element intr-un array prin ciclul WHILE
+
+/*let newArray = [25, 17, 'Arina', 56, 'Olga']
+let arrElement = prompt('Ce element cautati')
+let arrElementFound = false
+let i = 0
+
+while (i < newArray.length && !arrElementFound) {
+	if (newArray[i] == arrElement) {
+		console.log(`Elementul ${arrElement} a fost gasit la pozitia ${i}`)
+		arrElementFound = true
+	}
+	i++
+}
+
+if (!arrElementFound) {
+	console.log(`Elemenul ${arrElement} nu a fost gasit`)
+	
+}
+*/
+
+//! ex2 Calcul bacsis + media facuri prin ciclu for cu adaugarea a 2 array-uri care includ lista de bacsis si facturi totale
+
+/*let facturi = [22, 295, 176, 440, 37, 105, 10, 1100, 56, 82]
+let bacsis
+let tips = []
+let totals = []
+
+function calcTips(factura) {
+	bacsis = factura <= 300 && factura >= 50 ? bacsis = factura * 0.15 : bacsis = factura * 0.2
+	return bacsis
+}
+
+for (i = 0; i < facturi.length; i++){
+	bacsis = calcTips(facturi[i])
+	tips.push(bacsis)
+	totals.push(bacsis + facturi[i])
+}
+
+console.log(tips)
+console.log(totals)
+
+function calcAverageTotals(arr) {
+	let suma = 0
+	for (let i = 0; i < arr.length; i++){
+		suma += arr[i]
+	}
+	return suma / arr.length
+}
+
+const mediaTotals = calcAverageTotals(totals)
+console.log(`media pentru 10 facturi este ${mediaTotals}`)*/
+
+//! ex3 calcularea doinzii compuse
 
 
+/*function calculateInterest(principal, rate, years) {
+	let amount = principal
+	for (let i = 0; i < years; i++){
+		amount += amount * rate / 100
+	}
+	return amount
+}
+
+function calculateMonthlyContribution(contribution, rate, years) {
+	let amount = 0
+	for (let i = 0; i < years * 12; i++){
+		amount += contribution
+		amount += amount * rate / 100 / 12
+	}
+	return amount
+}
+
+function printSavings(name, principal, rate, years, monthlyContribution) {
+	const interest = calculateInterest(principal, rate, years)
+	const contribution = calculateMonthlyContribution(monthlyContribution, rate, years)
+	const total = interest + contribution
+	console.log(`${name}, suma totala care va fi in contul tau de depozit peste ${years} ani este de ${total.toFixed(2)}`);
+}
+
+printSavings('Ioana', 1000, 5, 10, 50)*/
 
 
+//! oiecte - metode / exrecitii
 
 
