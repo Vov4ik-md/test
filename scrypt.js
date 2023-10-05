@@ -970,30 +970,50 @@ for (i = 1; i <= 10; i = i + 1){
 //Suma numerelor de la 1 la 10
 console.log('Suma numerelor de la 1 la 10')
 
+const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let total = numb.reduce(function (a, b) {
+	return a + b
+}, 0)
+
+console.log(`suma numerelor de la 1 la 10 este ${total}`)
 
 
-let total = 0
 
-for (i = 1; i <= 10; i++){
+let multipleTo7 = numb.reduce((a, b) => {
+	a.push (b * 7)
+	return a
+}, [])
+	console.log(multipleTo7)
+	
+
+
+/*for (i = 1; i <= 10; i++){
 	total = total + i
 	console.log(total)
 }
-console.log(`suma cifrelor de la 1 la 10 este egala ${total}`)
+console.log(`suma cifrelor de la 1 la 10 este egala ${total}`)*/
 
-let total1 = 0
+/*let total1 = 0
 for (i = 10; i <= 30; i = i + 2){
 	total1 = total1 + i
 	console.log(total1)
-}
+}*/
 
 //calculati si afisati media numerelor din array
 
-let sumArray = 0
+
 const newArray = [25, 56, 21, 47, 256, 145, -12, -489, 56, -8, 1453]
+
+const newAverage = newArray.reduce((a, b) => {
+	return a + b
+}, )
+
+console.log(newAverage/newArray.length)
+
+let sumArray = 0;
 for (i = 0; i < newArray.length; i++) {
 	sumArray = sumArray + newArray[i]
 	console.log('suma cifrelor din array este ' + sumArray)
 }
-
 console.log(sumArray/newArray.length, 'este media')
-
