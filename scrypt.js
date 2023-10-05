@@ -1002,11 +1002,8 @@ for (i = 10; i <= 30; i = i + 2){
 
 //calculati si afisati media numerelor din array
 
-<<<<<<< HEAD
 
-=======
 /*let sumArray = 0
->>>>>>> 70e82ba7b9f0691232e091c6c9521ccb86cec7c7
 const newArray = [25, 56, 21, 47, 256, 145, -12, -489, 56, -8, 1453]
 
 const newAverage = newArray.reduce((a, b) => {
@@ -1020,9 +1017,7 @@ for (i = 0; i < newArray.length; i++) {
 	sumArray = sumArray + newArray[i]
 	console.log('suma cifrelor din array este ' + sumArray)
 }
-<<<<<<< HEAD
 console.log(sumArray/newArray.length, 'este media')
-=======
 
 console.log(sumArray/newArray.length, 'este media')*/
 
@@ -1111,6 +1106,5 @@ console.log(myNewCar)
 
 
 
->>>>>>> 70e82ba7b9f0691232e091c6c9521ccb86cec7c7
 
 
