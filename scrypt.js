@@ -687,19 +687,19 @@ console.log(newAverage/newArray.length)
 //? ---EX1 Afisam un sir Fibonnaci pentru numerele pana la 1000---
 
 /*
-let arr = [0, 1];
-let next = 1;
+let arr = [];
+let num1 = 0;
+let num2 = 1;
 
-while (next <= 1000) {
-	next = arr[arr.length - 1] + arr[arr.length - 2];
-	if (next <= 1000) {
-		arr.push(next);
-	}
+while (num1 <= 1000) {
+	arr.push(num1);
+	let temp = num1;
+	num1 = num2;
+	num2 = temp + num2;
 }
 
 console.log(arr);
 */
-
 
 //? ---EX2  Verificarea paritatii---
 
