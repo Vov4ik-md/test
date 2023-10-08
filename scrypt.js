@@ -266,282 +266,159 @@ if (mediumScoreDelfini > 100 || mediumScoreKoalas > 100) {
 }
 */
 
+//! ---Ana’s calculator v.1 - (Switch statement 11 sept.)---
 
-//? Exercitiu 2
+
+//?   ---Exercitiu 2---
 
 //* Varianta 1
+/*
+console.log('Exercitiu #2 - calculator de bacsis')
+console.log('Varianta 1')
 
-// console.log('Exercitiu #2 - calculator de bacsis')
+let cashReceipt = 275
+cashReceipt >= 50 || cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
+let finalValue = cashReceipt + tips
 
-// console.log('Varianta 1')
-
-// let cashReceipt = 275
-
-// cashReceipt >= 50 || cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
-
-// let finalValue = cashReceipt + tips
-
-// console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
+console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
 
 //* Varianta 2
 
-// console.log('Varianta 2')
+console.log('Varianta 2')
 
-// cashReceipt = 40
+cashReceipt = 40
+cashReceipt >= 50 && cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
+finalValue = cashReceipt + tips
 
-// cashReceipt >= 50 && cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
-
-// finalValue = cashReceipt + tips
-
-// console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
+console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
 
 //* Varianta 3
 
-// console.log('Varianta 3')
-
-// cashReceipt = 430
-
-// cashReceipt >= 50 && cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
-
-// finalValue = cashReceipt + tips
-
-// console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
-
-//! Function
-
-// function printName(name) {
-// 	console.log(name)
-// }
-
-// printName('Alexandra')
-// printName('Elena')
-// printName(true)
-// printName(2569)
-
-// function multiply(a, b) {
-// 	const total = a * b //local variabile
-// 	console.log(total) //print result
-// 	return multiplyResult = total
-// }
-
-// multiply(56, 75)
-// console.log(multiplyResult)
-
-// function calcVirsta(anulNasterii) {
-// 	console.log(2023 - anulNasterii) //print result
-// 	return age = 2023 - anulNasterii //returnam variabila age
-// }
-
-// calcVirsta(1989)
-
-// console.log(age)
-
-
-// function calcVirsta2(anulCurent, anulNasterii) {
-// 	console.log(anulCurent - anulNasterii) //print result
-// 	return age2 = anulCurent - anulNasterii //returnam variabila age
-// }
-
-// calcVirsta2(2023, 1989)
-
-// console.log(age2)
-
-// function juiceMaker(fruct1, fruct2, fruct3) {
-// 	const juice = `suc din ${fruct1}, ${fruct2} si ${fruct3}`
-// 	//return juice = `Suc din ${fruct1}, ${fruct2} si ${fruct3}`
-// 	console.log(juice)
-	
-// }
-
-// juiceMaker('morcov', 'portocale', 'cirese')
-
-// function juiceMaker2(fruct1, fruct2, fruct3) {
-// 	const juice = `suc din ${fruct1} cirese, ${fruct2} portocale si ${fruct3} mere`
-// 	//return juice = `Suc din ${fruct1}, ${fruct2} si ${fruct3}`
-// 	console.log(juice)
-	
-// }
-
-// juiceMaker2(5, 3, 8)
-
-// // function declaration and expresion
-
-// // function declaration
-// console.log(calcVirsta4(1980))
-
-
-// function calcVirsta4(anulNasterii) {
-// 	return age = 2023 - anulNasterii //returnam variabila age
-// }
-
-// // expresion
-// const calcVirsta3 = function (anulNasterii) {
-// 	return age = 2023 - anulNasterii //returnam variabila age
-// }
-
-// console.log(calcVirsta3(1989))
-
-// function calcTips(factura) {
-// 	bacsis = factura <= 300 && factura >= 50 ? factura * 0.15 : factura * 0.2
-// 	console.log(`Factura este de ${factura}, bacsisul este de ${bacsis} si total spre plata ${factura + bacsis}`)
-// }
-
-// calcTips(275)
-// calcTips(40)
-// calcTips(430)
-
-// //other method
-
-// function calcTips1(factura) {
-// 	bacsis = factura <= 300 && factura >= 50 ? factura * 0.15 : factura * 0.2
-// 	return `Factura este de ${factura}, bacsisul este de ${bacsis} si total spre plata ${factura + bacsis}`
-// }
-
-// console.log(calcTips1(420))
-// console.log(calcTips1(150))
-// console.log(calcTips1(45))
-
-// // function simpleFunction() {
-// // 	alert('e prea usoara aceasta functie')
-// // }
-
-// // simpleFunction()
-
-// function simpleFunction() {
-// 	console.log('e prea usoara aceasta functie')
-// }
-
-// simpleFunction()
-
-// //function in funtion
-
-// function virstaPinaLaPensie(pensia, anulMeuDeNastere) {
-// 	const virstaActuala = calcVirsta4(anulMeuDeNastere)
-// 	return pensia - virstaActuala
-// }
-
-// console.log(`Pana la pensie au mai ramas ${virstaPinaLaPensie(64, 1975)} ani`)
-
-// function maruntinFructe(fruct) {
-// 	return fruct * 4
-// }
-
-// function juiceMaker2(fruct1, fruct2, fruct3) {
-// 	const juice = `suc din ${maruntinFructe(fruct1)} de bucatele de cirese, ${maruntinFructe(fruct2)} de felii de portocale si ${maruntinFructe(fruct3)} de felii de mere`
-// 	console.log(juice)
-// }
-
-// juiceMaker2(5, 3, 8)
-
-// console.log("Runda 1")
-
-// function calcAverage(score1, score2, score3) {
-// 	return (score1 + score2 + score3) / 3
-// }
-
-// let avgDolphins = calcAverage(44, 23, 71)
-
-// console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
-
-// let avgKoalas = calcAverage(65, 54, 49)
-
-// console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
-
-// function chekWinner(avgDolphins, avgKoalas) {
-// 	if (avgDolphins > avgKoalas * 2) {
-// 		console.log("Echipa Delfinii a castigat")
-// 	} else if (avgKoalas > avgDolphins * 2) {
-// 		console.log("Echipa Koalas a castigat")
-// 	} else {
-// 		console.log("Nu au fost indeplinite conditiile pentru a alege un castigator")
-// 	}
-// }
-
-// chekWinner(avgDolphins, avgKoalas)
-
-// console.log("Runda 2")
-
-// avgDolphins = calcAverage(85, 54, 41)
-
-// console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
-
-// avgKoalas = calcAverage(23, 34, 27)
-
-// console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
-
-// chekWinner(avgDolphins, avgKoalas)
-
-
-// function helloWorld(language) {
-// 	if (language === "es") {
-// 		return "Hola Mundo!";
-// 	} else if (language === "de") {
-// 		return "Hallo Welt!";
-// 	} else if (language === "jp") {
-// 		return "こんにちは世界!";
-// 	} else {
-// 		return "Hello, World!";
-// 	}
-// }
-
-// console.log(helloWorld("es"));
-// console.log(helloWorld("de"));
-// console.log(helloWorld("jp"));
-// console.log(helloWorld());
-
-// function numbersAnimals(number, name) {
-// 	if (number === 1 || name === "sheep") {
-// 		return (`I have ${number} ${name}`)
-// 	} else if (number !== 1 && name === "goose") {
-// 		return (`I have ${number} geese`)
-// 	} else {
-// 		return (`I have ${number} ${name}s`)
-// 	}
-// }
-
-// console.log(numbersAnimals(6, "pig"));
-// console.log(numbersAnimals(0, "hamster"));
-// console.log(numbersAnimals(1, "parrot"));
-// console.log(numbersAnimals(5, "sheep"));
-// console.log(numbersAnimals(1, "goose"));
-// console.log(numbersAnimals(3, "goose"));
-
-// let pret
-
-// let anulDeNastere = prompt("introduceti anul de nastere")
-
-// function age(birthYear) {
-// 	console.log(2023 - anulDeNastere)
-// }
-
-// age()
-// function cost(anulDeNastere) {
-// 	let virsta = age(anulDeNastere)
-// 	if (virsta < 12) {
-// 		pret = 5
-// 	} else if (virsta >= 12 && virsta < 18) {
-// 		pret = 10
-// 	} else if (virsta >= 18 && virsta < 65) {
-// 		pret = 20
-// 	} else {
-// 		pret = 15
-// 	}
-// 	console.log(`Pretul biletului este de ${pret} lei iar virsta e de ${virsta} ani`);
-// }
-
-// cost(2015)
-// cost(1985)
-// cost(1957)
-// cost(2008)
-/*let numele = prompt("Introduceti numele dvs")
-
-
-
+console.log('Varianta 3')
+
+cashReceipt = 430
+cashReceipt >= 50 && cashReceipt <= 300 ? (tips = cashReceipt * 0.15) : (tips = cashReceipt * 0.2)
+finalValue = cashReceipt + tips
+
+console.log(`Nota de plata este de ${cashReceipt}, bacsisul este de ${tips} si valoarea totala este de ${finalValue}`)
+*/
+
+//!  ---Exercitiu: echipele de sport v.2 (lectia functii - 20 sept)---
+
+/*
+function calcAverage(score1, score2, score3) {
+	return (score1 + score2 + score3) / 3
+}
+
+let avgDolphins = calcAverage(44, 23, 71)
+let avgKoalas = calcAverage(65, 54, 49)
+
+console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
+console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
+
+function chekWinner(avgDolphins, avgKoalas) {
+	if (avgDolphins > avgKoalas * 2) {
+		console.log("Echipa Delfinii a castigat")
+	} else if (avgKoalas > avgDolphins * 2) {
+		console.log("Echipa Koalas a castigat")
+	} else {
+		console.log("Nu au fost indeplinite conditiile pentru a alege un castigator")
+	}
+}
+chekWinner(avgDolphins, avgKoalas)
+
+
+console.log("Runda 2")
+
+avgDolphins = calcAverage(85, 54, 41)
+avgKoalas = calcAverage(23, 34, 27)
+
+console.log(`Scorul mediu al echipei Delfinii este de ${avgDolphins} de puncte`)
+console.log(`Scorul mediu al echipei Delfinii este de ${avgKoalas} de puncte`)
+
+chekWinner(avgDolphins, avgKoalas)
+*/
+
+//!  ---4 Exercitii de la coding day (22 sept)---
+
+//? ---ex 1---
+//! Scrieți o funcție de traducere numită helloWorld
+/*
+function helloWorld(language) {
+	if (language === "es") {
+		return "Hola Mundo!"
+	} else if (language === "de") {
+		return "Hallo Welt!"
+	} else if (language === "jp") {
+		return "こんにちは世界!"
+	} else {
+		return "Hello, World!"
+	}
+}
+
+console.log(helloWorld("es"));
+console.log(helloWorld("de"))
+console.log(helloWorld("jp"))
+console.log(helloWorld())
+*/
+
+//? ---ex 2---
+//! Scrieți o funcție cu numele plural
+/*
+function numbersAnimals(number, name) {
+	if (number === 1 || name === "sheep") {
+		return (`I have ${number} ${name}`)
+	} else if (number !== 1 && name === "goose") {
+		return (`I have ${number} geese`)
+	} else {
+		return (`I have ${number} ${name}s`)
+	}
+}
+
+console.log(numbersAnimals(6, "pig"))
+console.log(numbersAnimals(0, "hamster"))
+console.log(numbersAnimals(1, "parrot"))
+console.log(numbersAnimals(5, "sheep"))
+console.log(numbersAnimals(1, "goose"))
+console.log(numbersAnimals(3, "goose"))
+*/
+
+//? ---ex 3---
+//! pretul biletului la gradina Botanica
+
+/*
+let pret
+let anulDeNastere = prompt("introduceti anul de nastere")
+
+function age(birthYear) {
+	console.log(2023 - anulDeNastere)
+}
+age()
+
+function cost(anulDeNastere) {
+	let virsta = age(anulDeNastere)
+	if (virsta < 12) {
+		pret = 5
+	} else if (virsta >= 12 && virsta < 18) {
+		pret = 10
+	} else if (virsta >= 18 && virsta < 65) {
+		pret = 20
+	} else {
+		pret = 15
+	}
+	console.log(`Pretul biletului este de ${pret} lei iar virsta e de ${virsta} ani`);
+}
+
+cost(2015)
+cost(1985)
+cost(1957)
+cost(2008)
+*/
+
+//? ---ex 4---
 //! Virsta de pensionare
-
-
-
-
+/*
+let numele = prompt("Introduceti numele dvs")
 function nameOfPerson(name) {
 	return numele
 }
@@ -571,147 +448,59 @@ function virstaDePensionare() {
 	}
 }
 
-let sergiu = virstaDePensionare() */
+virstaDePensionare() 
+*/
 
 //Sergiu 1979
 //Anastasia 1963
 //Andreea 2010
 
-// const numelePersoanei = prompt('numele')
-// const anulNasterii = Number(prompt('Anul nasterii'))
-// const isF = Boolean(prompt('Introduceti 1 pentru femeie sau lasati gol (FALSE) pentru barbat'))
 
-// function virsta(a) {
-// 	return 2023 - a
-// }
+//! ---Ana’s calculator v.2 (lectia Arrays - 25 sept)---
+/*
+const bills = [125, 555, 44]
 
-// function virstaPensionarii(b) {
-// 	/*if (b) {
-// 		console.log('persoana noastra este femeie si virsta de pensionare e de 64 de ani')
-// 	} else {
-// 		console.log('Persoana este barbat si virsta de pensionare e de 67 de ani')
-// 	}*/
-// 	return  b ? 64 : 67
-// }
-
-// function chekPension(e, c, d) {
-// 	let age = virsta(c)
-// 	let pensie = virstaPensionarii(d)
-// 	let aniPanaLaPensionare = pensie - age
-// 	console.log(`${age} ${pensie} ${aniPanaLaPensionare}`)
-	
-// 	if (age < 18) {
-// 		console.log(`${e} Persoana este minora`);
-// 	} else if (age >= pensie) {
-// 		console.log(`${e}Deja este pensionar`);
-// 	} else {
-// 		console.log(`${e} au ramas ${aniPanaLaPensionare}`)
-		
-// 	}
-// }
-
-// chekPension(numelePersoanei, anulNasterii, isF)
-//console.log(virstaPensionarii(isF))
-
-
-
-
-//! ARRAY - ARRAY - ARRAY - ARRAY - ARRAY
-
-
-
-
-/*const friend1 = 'Monica'
-const friend2 = 'Ross'
-const friend3 = 'Rachel'
-const friend4 = 'Phoebe'
-const friend5 = 'Chandler'
-const friend6 = 'Joey'*/
-
-
-//? Array literal
-
-
-
-/*const friends = ['Monica', 'Ross', 'Rachel', 'Phoebe', 'Chandler', 'Joey']
-console.log(friends);
-
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers)
-
-const mixed = [1, 'Hello', [1, 2, 3], false]
-console.log(mixed)*/
-
-
-//? Array constructor  -  const array = new Array()
-
-
-/*const numbers2 = new Array(1, 2, 3, 4, 5)
-console.log(numbers2)
-
-const mixed2 = new Array(1, 'Hello', [1, 2, 3], true, 2.5)
-console.log(mixed2)*/
-
-
-//? Proprietatea lenght
-
-
-/*console.log(mixed2[2])
-console.log(friends[4])
-console.log(mixed.length)
-function deletaArray(a) {
-	a.length = 0
-}
-
-deletaArray(mixed)
-console.log(mixed)
-console.log(friends[friends.length -3])*/
-
-
-//!const bills = [125, 555, 44]
-
-/*function calcBacsis(a) {
+function calcBacsis(a) {
 	return a < 300 && a >= 50 ? a * 0.15 : a * 0.2
 }
 
 const tips = [calcBacsis(bills[0]), calcBacsis(bills[1]), calcBacsis(bills[2])]
-
 console.log(tips)
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
-
 console.log(totals)
+*/
 
-console.log(friends.sort())
-console.log(friends.reverse())
-let deletedfriend = friends.pop()
-console.log(friends.push(deletedfriend))
-console.log(friends)*/
+//? 4 Exercitii la array (lectia Arrays - 25 sept)
 
-//? exercitiul 1
-
-/*console.log(`Exercitiu 1 - array si array reverse`)
+//?  ---exercitiul 1---
+/*
+console.log(`Exercitiu 1 - array si array reverse`)
 
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 console.log('array')
 console.log(letters)
 console.log('array reverse')
-console.log(letters.reverse())*/
+console.log(letters.reverse())
+*/
 
-//? exercitiul 2
-
-/*console.log('Exercitiul 2 - rotirea array cu 1 pozitie la stinga')
+//? ---exercitiul 2---
+/*
+console.log('Exercitiul 2 - rotirea array cu 1 pozitie la stinga')
 
 letters.shift()
 letters.push('h')
-console.log(letters)*/
+console.log(letters)
+*/
 
-//? exercitiul 3
-
-/*console.log('Exercitiu 3 - creem si chemam functia de imbinare a 2 array-uri in unul nou')
+//? ---exercitiul 3---
+/*
+console.log('Exercitiu 3 - creem si chemam functia de imbinare a 2 array-uri in unul nou')
 
 const numbers = [999, 888, 777, 666, 555, 444, 333, 222, 111]
+const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 console.log(numbers)
+console.log(letters)
 
 function newArray() {
 	const lettersAndNumbers = numbers.concat(letters)
@@ -719,9 +508,9 @@ function newArray() {
 }
 console.log(newArray()) */
 
-//?exercitiul 4
-
-/*console.log('Exercitiul 4 - creem functia care intoarce doar valorile pozitive din array')
+//?  ---exercitiul 4---
+/*
+console.log('Exercitiul 4 - creem functia care intoarce doar valorile pozitive din array')
 
 const numbers2 = [-1, 5, 22 - 75, 18, 69, -68, -56, 99, 10, -10]
 console.log(`Creem array-ul :`)
@@ -738,11 +527,14 @@ function negativeValues() {
 console.log(`Array cu valorile pozitive:`)
 console.log(positiveValues())
 console.log(`Array cu valorile negaive:`)
-console.log(negativeValues()) */
+console.log(negativeValues())
+*/
 
-//? exercitiul 5
 
-/*let listaCumparaturi = ['oua', 'piine', 'mere', 'banane', 'cartofi', 'unt', 'inghetata', 'smintina', 'maioneza']
+//! ---Gestionarea Listei de Cumpărături (lectia Arrays - 25 sept)---
+
+/*
+let listaCumparaturi = ['oua', 'piine', 'mere', 'banane', 'cartofi', 'unt', 'inghetata', 'smintina', 'maioneza']
 console.log('Lista de cumparaturi:')
 console.log(listaCumparaturi)
 
@@ -805,38 +597,49 @@ bonus('banane')
 bonus('lapte')
 bonus('ceapa')
 bonus('ulei')
-bonus('unt')*/
+bonus('unt')
+*/
 
 
-//! FOR LOOP   -   29.09.2023
+//! ---Exercitii for loop: (lectia array loops 29 sept)---
 
-/*const myArray = [15, 56, -12, 56, 1, true, 'eu', 58, 69]
-console.log(myArray)
-for (let i = 0; i < myArray.length; i++) {
-	console.log('elementul ' + myArray[i] + ' are pozitia ' + i)
-}
 
+//? ---ex 1---
+/*
 for (i = 1; i <= 10; i++){
 	console.log(i)
-}*/
+}
+*/
 
-//afisati numere impare pana la 100
-
-/*for (i = 1; i < 100; i = i + 2){
+//? ---ex 2---
+/*
+for (i = 1; i < 100; i = i + 2){
 	console.log(i)
-}*/
+}
+*/
 
-//afisati tablita inmultirii la 7
+//? ---ex 3---
 
-/*console.log('tabla inmultirii la 7')
+/*
+console.log('tabla inmultirii la 7')
 
 for (i = 1; i <= 10; i = i + 1){
 	console.log(i*7)
-}*/
+}
 
-//Suma numerelor de la 1 la 10
-/*console.log('Suma numerelor de la 1 la 10')
 
+(reduce)
+
+let multipleTo7 = numb.reduce((a, b) => {
+	a.push (b * 7)
+	return a
+}, [])
+	console.log(multipleTo7)
+*/
+
+//? ---ex 4---
+/*
+console.log('Suma numerelor de la 1 la 10')
 const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 let total = numb.reduce(function (a, b) {
@@ -844,83 +647,64 @@ let total = numb.reduce(function (a, b) {
 }, 0)
 
 console.log(`suma numerelor de la 1 la 10 este ${total}`)
+*/
 
-
-
-let multipleTo7 = numb.reduce((a, b) => {
-	a.push (b * 7)
-	return a
-}, [])
-	console.log(multipleTo7)
-	
-
-
-/*for (i = 1; i <= 10; i++){
-	total = total + i
-	console.log(total)
+//? ---ex 5---
+/*
+let number = []
+for (let i = 10; i <= 30; i++){
+	number.push(i)
 }
-console.log(`suma cifrelor de la 1 la 10 este egala ${total}`)*/
+console.log(number)
 
-/*let total1 = 0
-for (i = 10; i <= 30; i = i + 2){
-	total1 = total1 + i
-	console.log(total1)
-}*/
+let total = number.reduce(function(a, b){
+	return a + b
+}, 0)
+
+console.log(`Suma numerelor de la 10 la 30 este egala cu ${total}`)
+*/
+
+
+//? ---ex 6---
 
 //calculati si afisati media numerelor din array
 
-
-/*let sumArray = 0
+/*
+let sumArray = 0
 const newArray = [25, 56, 21, 47, 256, 145, -12, -489, 56, -8, 1453]
-
 const newAverage = newArray.reduce((a, b) => {
 	return a + b
 }, )
-
 console.log(newAverage/newArray.length)
-
-let sumArray = 0;
-for (i = 0; i < newArray.length; i++) {
-	sumArray = sumArray + newArray[i]
-	console.log('suma cifrelor din array este ' + sumArray)
-}
-console.log(sumArray/newArray.length, 'este media')
-
-console.log(sumArray/newArray.length, 'este media')*/
-
+*/
 
 
 //!  WHILE LOOP
 
-
-//? EX1 Afisam numerele pare pana la 100
-
-/*console.log("Afisam numerele de la 0 la 100 prin while loop")
-
-let i = 0
-while (i < 100) {
-	console.log(i)
-	i+=2
-}*/
-
-//? EX2 Afisam un sir Fibonnaci pentru numerele pana la 1000
+//? Exercitii while loop: (lectia array loops 29 sept)
 
 
-/*console.log('sir Fibonnaci');
+//? ---EX1 Afisam un sir Fibonnaci pentru numerele pana la 1000---
 
-let a = 0
-let b = 1
+/*
+let arr = [0, 1];
+let next = 1;
 
-/*while (c < 1000) {
-	console.log(c)
-	a = b
-	b = c
-	c = a + b
-}*/
+while (next <= 1000) {
+	next = arr[arr.length - 1] + arr[arr.length - 2];
+	if (next <= 1000) {
+		arr.push(next);
+	}
+}
 
-//? EX3  Verificarea paritatii
+console.log(arr);
+*/
 
-/*let a
+
+//? ---EX2  Verificarea paritatii---
+
+/*
+let a
 while (a !== 'stop') {
 	a = prompt('Introduceti numar intreg sau scriti cuvintul STOP')
 	if (a % 2 === 0) {
@@ -930,50 +714,13 @@ while (a !== 'stop') {
 	} else {
 		console.log(`${a} este numar impar`)
 	}
-}*/
-
-
-//! Objects
-
-/*let myCar = [2016, 'Ford', 2, 'gri', 'automat']
-
-let myNewCar = {
-	anul: 2016,
-	marca: 'Ford',
-	capacitatea: 2,
-	culoarea: 'gri',
-	cutie: 'automat',
-	accidente: [2018, 2020, 2021, 2023],
-	proprietari: {
-		numele: 'Vasile',
-		anulNasterii: 1980,
-		proprietar: 2019 - 2016
-	}
 }
-
-
-console.log(myNewCar)
-
-//console.log(`Culoarea masinii in array este ` + myCar[3])
-//console.log(`Culoarea masinii in obiect este ` + myNewCar.culoarea)
-if (myNewCar.culoarea === "gri") {
-	console.log('culoare nemodificata')
-}
-
-myNewCar.culoarea = 'alba'
-console.log(`Culoarea masinii in obiect este ` + myNewCar.culoarea)
-
-myNewCar.accidente = 0
-console.log(myNewCar.accidente)
-delete myNewCar.accidente
-console.log(myNewCar.accidente)
-myNewCar.proprietari.anulNasterii = 2010
-console.log(myNewCar)
 */
 
-//! ex1 cautarea unui element intr-un array prin ciclul WHILE
 
-/*let newArray = [25, 17, 'Arina', 56, 'Olga']
+//? ---ex3 cautarea unui element intr-un array prin ciclul WHILE---
+/*
+let newArray = [25, 17, 'Arina', 56, 'Olga']
 let arrElement = prompt('Ce element cautati')
 let arrElementFound = false
 let i = 0
@@ -992,7 +739,10 @@ if (!arrElementFound) {
 }
 */
 
-//! ex2 Calcul bacsis + media facuri prin ciclu for cu adaugarea a 2 array-uri care includ lista de bacsis si facturi totale
+
+//! ---Ana’s calculator v.3 (lectia array loops 29 sept)---
+
+//! ex Calcul bacsis + media facuri prin ciclu for cu adaugarea a 2 array-uri care includ lista de bacsis si facturi totale
 
 /*let facturi = [22, 295, 176, 440, 37, 105, 10, 1100, 56, 82]
 let bacsis
@@ -1024,10 +774,12 @@ function calcAverageTotals(arr) {
 const mediaTotals = calcAverageTotals(totals)
 console.log(`media pentru 10 facturi este ${mediaTotals}`)*/
 
-//! ex3 calcularea doinzii compuse
 
+//? ---Calcularea economiilor și a dobânzii compuse(lectia array loops 29 sept)---
+//! ex3 calcularea dobinzii compuse
 
-/*function calculateInterest(principal, rate, years) {
+/*
+function calculateInterest(principal, rate, years) {
 	let amount = principal
 	for (let i = 0; i < years; i++){
 		amount += amount * rate / 100
@@ -1051,8 +803,8 @@ function printSavings(name, principal, rate, years, monthlyContribution) {
 	console.log(`${name}, suma totala care va fi in contul tau de depozit peste ${years} ani este de ${total.toFixed(2)}`);
 }
 
-printSavings('Ioana', 1000, 5, 10, 50)*/
-
+printSavings('Ioana', 1000, 5, 10, 50)
+*/
 
 //! oiecte - metode / exrecitii
 
