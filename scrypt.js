@@ -1189,4 +1189,50 @@ printSavings('Ioana', 1000, 5, 10, 50)*/
 
 //! oiecte - metode / exrecitii
 
+//! ex1
 
+let carte = {
+	titlu: 'Abecedar',
+	autor: 'Grigore VIeru',
+	imprumuta: function (cititor) {
+		return console.log(`${cititor.nume} a imprumutat cartea ${this.titlu}`)
+	}
+}
+console.log(carte.imprumuta(cititor))
+
+let cititor = {
+	nume: 'Ion Antonescu',
+	imprumutaCarte: function (carte) {
+		carte.imprumuta(this)
+	}
+}
+
+cititor.imprumutaCarte(carte)
+
+
+//? ex 2 - calculator
+
+let calculator = {
+	valoare: 0,
+
+	adauga: function (num) {
+		this.valoare += num
+		return this
+	},
+	scade: function (num) {
+		this.valoare -= num
+		return this
+	},
+	inmulteste: function (num) {
+		this.valoare *= num
+		return this
+	},
+	imparte: function (num) {
+		if (num !== 0) {
+			this.valoare /= num
+		} else {
+			console.error('Nu se imparte la 0');
+		}
+		return this
+	}
+}
