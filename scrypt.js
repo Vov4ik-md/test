@@ -806,54 +806,52 @@ function printSavings(name, principal, rate, years, monthlyContribution) {
 printSavings('Ioana', 1000, 5, 10, 50)
 */
 
-//! oiecte - metode / exrecitii
+//! Exercitii pentru metodele Obiectelor (lectia din 04.10)
 
-//! ex1
-/*
-let carte = {
-	titlu: 'Abecedar',
-	autor: 'Grigore VIeru',
-	imprumuta: function (cititor) {
-		return console.log(`${cititor.nume} a imprumutat cartea ${this.titlu}`)
+//? ---1  Crearea si utilizarea metodelor simple---
+
+const person = {
+	firstName: 'Vladimir',
+	age: 34,
+	hobby: 'book reading',
+	salut: function(){
+		return console.log(`Salut! Numele meu este ${this.firstName}!`)
 	}
 }
-console.log(carte.imprumuta(cititor))
+person.salut()
 
-let cititor = {
-	nume: 'Ion Antonescu',
-	imprumutaCarte: function (carte) {
-		carte.imprumuta(this)
+//? ---2 Metode care modifica proprietatile---
+
+const contBancar = {
+	detinator: 'Vladimir',
+	sold: 0,
+	depunere: function(valoare){
+		return this.sold += valoare
+	},
+	retragere: function(valoare){
+		return this.sold -= valoare
+	},
+}
+
+console.log(`Soldul intial in cont este ${contBancar.sold},
+	dupa depunere suma in cont este ${contBancar.depunere(100)},
+	iar dupa retragere suma este ${contBancar.retragere(50)}`)
+
+//? --- 3 Metode care interactioneaza cu alte Obiecte ---
+
+const carte = {
+	titlul: 'La cirese',
+	autor: 'Ion Creanga',
+	imprumuta: function imprumuta(cititor){
+		return cititor
+	}
+}
+
+const cititor = {
+	nume: 'Vladimir',
+	imprumutaCarte: function imprumutaCarte(carte){
+		console.log(`Cititorul ${cititor.nume} imprumuta cartea ${carte.titlul}`);
 	}
 }
 
 cititor.imprumutaCarte(carte)
-
-
-//? ex 2 - calculator
-
-let calculator = {
-	valoare: 0,
-
-	adauga: function (num) {
-		this.valoare += num
-		return this
-	},
-	scade: function (num) {
-		this.valoare -= num
-		return this
-	},
-	inmulteste: function (num) {
-		this.valoare *= num
-		return this
-	},
-	imparte: function (num) {
-		if (num !== 0) {
-			this.valoare /= num
-		} else {
-			console.error('Nu se imparte la 0');
-		}
-		return this
-	}
-}
-*/
-
