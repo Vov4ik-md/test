@@ -809,7 +809,7 @@ printSavings('Ioana', 1000, 5, 10, 50)
 //! Exercitii pentru metodele Obiectelor (lectia din 04.10)
 
 //? ---1  Crearea si utilizarea metodelor simple---
-
+/*
 const person = {
 	firstName: 'Vladimir',
 	age: 34,
@@ -819,9 +819,9 @@ const person = {
 	}
 }
 person.salut()
-
+*/
 //? ---2 Metode care modifica proprietatile---
-
+/*
 const contBancar = {
 	detinator: 'Vladimir',
 	sold: 0,
@@ -836,9 +836,9 @@ const contBancar = {
 console.log(`Soldul intial in cont este ${contBancar.sold},
 	dupa depunere suma in cont este ${contBancar.depunere(100)},
 	iar dupa retragere suma este ${contBancar.retragere(50)}`)
-
+*/
 //? --- 3 Metode care interactioneaza cu alte Obiecte ---
-
+/*
 const carte = {
 	titlul: 'La cirese',
 	autor: 'Ion Creanga',
@@ -855,3 +855,4 @@ const cititor = {
 }
 
 cititor.imprumutaCarte(carte)
+*/
